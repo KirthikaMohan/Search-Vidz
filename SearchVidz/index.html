@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SearchVidz</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/jquery.fancybox.css">
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>	
+		<script src="js/script.js"></script>
+		<script src="js/jquery.fancybox.pack.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".fancybox").fancybox();
+			});
+		</script>
+	</head>
+	
+	<body>
+		<div id="container">
+			<header>
+				<h1>Search<span>Vidz</span></h1>
+				<p>Search all Youtube Videos<p>
+			</header>
+			<section>
+				<form id="search-form" name="search-form" onsubmit="return search()">
+					<div class="fieldcontainer">
+						<input type="search" id="query" class="search-field" placeholder="Search YouTube...">
+						<input type="submit" name="search-btn" id="search-btn" value="">
+					</div>
+				</form>
+				<!---The results will be displayed here--->
+				<ul id="results"></ul>
+				<!---The previous and next Buttons div here--->
+				<div id="buttons"></div>
+			</section>
+				
+			<footer>
+					<p>Copyright &copy; 2015 by Kirthika Mohan.All Rights Reserved</p>
+			</footer>
+				
+		</div>
+	</body>
+	
+	
+</html>
